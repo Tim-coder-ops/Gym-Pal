@@ -23,3 +23,6 @@ The Log New Excercise page will allow the user to select their exercise and inpu
 
 The Progress page will allow the user to view their past volume per bodypart along with their past workouts per exercise. These charts will be based on what the users selections. It will also display the users past body weight.
 ![Progress Page](https://github.com/Tim-coder-ops/Gym-Pal/blob/master/Wire%20Diagram%20PDFs/New%20Project%201/Application%20Wire-frames/Progress_Workout%20History.png)
+
+## Initial CHEN Relational Diagram
+![Initial CHEN Diagram](https://github.com/Tim-coder-ops/Gym-Pal/blob/master/Initial%20CHEN%20Diagram.PNG)
