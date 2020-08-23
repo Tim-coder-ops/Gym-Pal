@@ -29,6 +29,44 @@ The Progress page will allow the user to view their past volume per bodypart alo
 
 ## Requirements
 [Requirements Document](https://github.com/Tim-coder-ops/Gym-Pal/blob/master/Gym%20Pal%20Requirements.docx)
+| Requirement ID | Requirement                                                         |
+|----------------|-----------------------------------------------------------------------------------------------------|
+| 1.0.0          | User must be able to create account                                                                 |
+|   1.1.0        | System must see if account already exists                                                           |
+|     1.1.1      | System must have access to users in database                                                        |
+| 2.0.0          | User must be able to log into account                                                               |
+|   2.1.0        | System must check for username                                                                      |
+|     2.1.1      | System must have access to database with usernames                                                  |
+|  2.2.0         | System must check that input password matches users password                                        |
+|     2.2.1      | System must have access to database with passwords                                                  |
+| 3.0.0          | System must display past exercise history                                                           |
+|   3.1.0        | System must check the exercise that the user exercise                                               |
+|     3.1.1      | System must obtain users input exercise                                                             |
+|     3.1.2      | System must be able to read the input on the GUI                                                    |
+|   3.2.0        | System must obtain users ID to reference in the database                                            |
+|     3.2.1      | System must know who is signed in                                                                   |
+|   3.3.0        | System must be able to pull exercise history from database                                          |
+|     3.3.1      | System must have access to the database                                                             |
+| 4.0.0          | System must take user input and store it                                                            |
+|   4.1.0        | System must obtain users input in the GUI                                                           |
+|   4.2.0        | System must identify exercise ID                                                                    |
+|   4.3.0        | System must store exercises in the exercise history table                                           |
+| 5.0.0          | System must be able to display a graph of exercise volume                                           |
+|   5.1.0        | System must be able to view past exercise weights and reps                                          |
+|   5.2.0        | System must be able to do calculations based off of past reps and weights                           |
+| 6.0.0          | User must be able to choose buddy                                                                   |
+|   6.1.0        | User must be able to search for buddy                                                               |
+|     6.1.1      | System must access list of usernames and display them                                               |
+| 7.0.0          | User must be able to reset password                                                                 |
+|   7.1.0        | System must have stored security questions for the user                                             |
+|   7.2.0        | System must be able to compare the users answers to security questions to the ones in the   database|
+| 8.0.0          | User must be able to view past body weight                                                          |
+|   8.1.0        | System must be able to access past body weights based off of user ID                                |
+| 9.0.0          | User must be able to store new body weights                                                         |
+|   9.1.0        | System must take users input and store weight based off of user ID                                  |
+| 10.0.0         | System must be able to display users history per exercise on progress page                          |
+|   10.1.0       | System must obtain users selected body part and exercise from GUI                                   |
+|   10.2.0       | System must access all of the users past exercises.                                                 |
 
 ## User Stories
 User Story #1:
