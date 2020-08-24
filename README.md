@@ -1,10 +1,20 @@
 # Gym-Pal
- Application designed for logging workouts
-## Inspiration
+ ## [Table of Contents](#table-of-contents)
+ 1) [Inspiration](#inspiration)
+ 2) [Concept](#concept)
+ 3) [Wire-Frames](#wire-frames)
+ 4) [Initial_CHEN_Diagram](#chen diagram)
+ 5) [Requirements](#requirements)
+ 6) [User-Stories](#user stories)
+ 7) [Use-Case Diagram](#use case diagram)
+ 
+## <div align="Center"> Inspiration</div>
 Throughout my time in the gym I have searched for gym apps that have all the features that I would want within a workout tracking app. I was never able to find one that had all of my desired functions. I have decided to create this application myself.
-## Concept
+
+## <div align="Center"> Concept</div>
 This app should allow a user to effectively track all their workout and give them information to look back on to improve. It should have a list of available exercises per bodypart. It should allow the user to see their past weights and reps per exercise and view a graph of their volume.
-## Wire-Frames
+
+## <div align="Center"> Wire-Frames</div>
 The Home Page will have an integrated GIF of a gym, along with a features list and buttons to become a user and sign in.
 ![Home Page](https://github.com/Tim-coder-ops/Gym-Pal/blob/master/Wire%20Diagram%20PDFs/New%20Project%201/Application%20Wire-frames/Homepage.png)
 
@@ -24,10 +34,10 @@ The Log New Excercise page will allow the user to select their exercise and inpu
 The Progress page will allow the user to view their past volume per bodypart along with their past workouts per exercise. These charts will be based on what the users selections. It will also display the users past body weight.
 ![Progress Page](https://github.com/Tim-coder-ops/Gym-Pal/blob/master/Wire%20Diagram%20PDFs/New%20Project%201/Application%20Wire-frames/Progress_Workout%20History.png)
 
-## Initial CHEN Relational Diagram
+## <div align="Center"> Initial CHEN Diagram</div>
 ![Initial CHEN Diagram](https://github.com/Tim-coder-ops/Gym-Pal/blob/master/Initial%20CHEN%20Diagram.PNG)
 
-## Requirements
+## <div align="Center"> Requirements</div>
 [Requirements Document](https://github.com/Tim-coder-ops/Gym-Pal/blob/master/Gym%20Pal%20Requirements.docx)
 | Requirement ID | Requirement                                                         |
 |----------------|-----------------------------------------------------------------------------------------------------|
@@ -68,7 +78,7 @@ The Progress page will allow the user to view their past volume per bodypart alo
 |   10.1.0       | System must obtain users selected body part and exercise from GUI                                   |
 |   10.2.0       | System must access all of the users past exercises.                                                 |
 
-## User Stories
+## <div align="Center"> User Stories</div>
 User Story #1:
 As a user 
 I need to be able to track my past weights and reps for exercises.
@@ -89,5 +99,5 @@ As a user
 I want to be able to have a workout buddy that can view my workouts.
 So that we can work together and motivate one another. 
 
-## Use Case Diagram
+## <div align="Center"> Use Case Diagram</div>
 ![Use Case Diagram](https://github.com/Tim-coder-ops/Gym-Pal/blob/master/Use%20Case%20Diagram.PNG)
