@@ -1,12 +1,13 @@
 # Gym-Pal
  ## [Table of Contents](#table-of-contents)
- 1) [Inspiration](#inspiration)
+ 1) [Inspiration](#Inspiration)
  2) [Concept](#concept)
  3) [Wire-Frames](#wire-frames)
- 4) [Initial_CHEN_Diagram](#chen diagram)
+ 4) Initial_CHEN_Diagram
  5) [Requirements](#requirements)
- 6) [User-Stories](#user stories)
- 7) [Use-Case Diagram](#use case diagram)
+ 6) Test Table
+ 7) User Stories
+ 8) Use Case Diagram
  
 ## <div align="Center"> Inspiration</div>
 Throughout my time in the gym I have searched for gym apps that have all the features that I would want within a workout tracking app. I was never able to find one that had all of my desired functions. I have decided to create this application myself.
@@ -77,6 +78,22 @@ The Progress page will allow the user to view their past volume per bodypart alo
 | 10.0.0         | System must be able to display users history per exercise on progress page                          |
 |   10.1.0       | System must obtain users selected body part and exercise from GUI                                   |
 |   10.2.0       | System must access all of the users past exercises.                                                 |
+
+
+## <div align="Center"> Test Table</div>
+
+| Test ID | Requirement ID | Test Procedure                                                                                                                                                                      | Status     | Time Stamp |
+|---------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|------------|
+| 1       | 1.0.0          | Create a new user account and check database for new account.                                                                                                                       | Not Tested |            |
+| 2       | 2.0.0          | Log in with created account,  Should to sent to user home screen.                                                                                                                   | Not Tested |            |
+| 3       | 3.0.0          | Log new workouts into the app, then  check the progress and log new exercise section to ensure that the past workouts are pulled.                                                   | Not Tested |            |
+| 4       | 4.0.0          | Go into the log new workout section and enter at least 3 different exercises. Then change the database to ensure they are stored.                                                   | Not Tested |            |
+| 5       | 5.0.0          | Ensure that workouts are logged in the database  under the correct user ID. Then go to the progress  section and check that the graph displays the workouts.                        | Not Tested |            |
+| 6       | 6.0.0          | Ensure that multiple users are created and stored in the database. Then go to find a buddy section and search  for another user. The user should appear and be able to be selected. | Not Tested |            |
+| 7       | 7.0.0          | Go to the log in window and click the forgot password link. Then answer the security questions. If answered correctly it will allow the user to create a new password.              | Not Tested |            |
+| 8       | 8.0.0          | Ensure that multiple user body weights are stored in the  database. Then go to the progress page. It should display  a graph with past weights.                                     | Not Tested |            |
+| 9       | 9.0.0          | Log multiple body weights under a logged in user. Ensure that the weights are saved in the database.                                                                                | Not Tested |            |
+| 10      | 10.0.0         | Ensure that multiple exercises are stored in the database. Then go to the progress page and select an exercise that is stored. It should display the past sets per exercise.        | Not Tested |            |
 
 ## <div align="Center"> User Stories</div>
 User Story #1:
