@@ -18,6 +18,33 @@ namespace GymPal.Controllers
             return View();
         }
 
+        [HttpGet("home")]
+        public IActionResult Home()
+        {
+            return View("index");
+        }
+
+
+         [HttpGet("login")]
+         public IActionResult login()
+         {
+             return View("login");
+         }
+
+         [HttpGet("register")]
+         public IActionResult register()
+         {
+             return View("register");
+         }
+
+         [HttpGet("userLogin")]
+         public IActionResult userLogin()
+         {
+             return View("UserHome");
+         }
+
+
+
         
     }
 }
