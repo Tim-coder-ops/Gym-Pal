@@ -41,3 +41,47 @@ C:\Users\Timwe\source\repos\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Ho
 C:\Users\Timwe\source\repos\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Home\register.cshtml.g.cs
 C:\Users\Timwe\source\repos\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Home\tables.cshtml.g.cs
 C:\Users\Timwe\source\repos\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Home\UserHome.cshtml.g.cs
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\bin\Debug\netcoreapp3.1\GymPal.exe
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\bin\Debug\netcoreapp3.1\GymPal.deps.json
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\bin\Debug\netcoreapp3.1\GymPal.runtimeconfig.json
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\bin\Debug\netcoreapp3.1\GymPal.runtimeconfig.dev.json
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\bin\Debug\netcoreapp3.1\GymPal.dll
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\bin\Debug\netcoreapp3.1\GymPal.pdb
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\bin\Debug\netcoreapp3.1\GymPal.Views.dll
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\bin\Debug\netcoreapp3.1\GymPal.Views.pdb
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\GymPal.csprojAssemblyReference.cache
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\GymPal.AssemblyInfoInputs.cache
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\GymPal.AssemblyInfo.cs
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\GymPal.csproj.CoreCompileInputs.cache
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\GymPal.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\GymPal.RazorAssemblyInfo.cache
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\GymPal.RazorAssemblyInfo.cs
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\GymPal.TagHelpers.input.cache
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\GymPal.TagHelpers.output.cache
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\GymPal.RazorCoreGenerate.cache
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Home\layout-sidenav-light.cshtml.g.cs
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Home\layout-static.cshtml.g.cs
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Home\login.cshtml.g.cs
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Home\password.cshtml.g.cs
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Home\register.cshtml.g.cs
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Home\tables.cshtml.g.cs
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Home\UserHome.cshtml.g.cs
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\GymPal.RazorTargetAssemblyInfo.cache
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\GymPal.RazorTargetAssemblyInfo.cs
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\GymPal.Views.pdb
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\staticwebassets\GymPal.StaticWebAssets.Manifest.cache
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\staticwebassets\GymPal.StaticWebAssets.xml
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\GymPal.dll
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\GymPal.pdb
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\GymPal.genruntimeconfig.cache
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\GymPal.csproj.CopyComplete
