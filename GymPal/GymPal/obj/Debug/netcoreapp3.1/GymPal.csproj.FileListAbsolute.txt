@@ -84,4 +84,6 @@ C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreap
 C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\GymPal.csproj.CopyComplete
 C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\register.cshtml.g.cs
 C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\UserHome.cshtml.g.cs
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\LogWorkout.cshtml.g.cs
+C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Index1.cshtml.g.cs
 C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Index.cshtml.g.cs

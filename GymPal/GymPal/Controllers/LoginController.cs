@@ -16,10 +16,10 @@ namespace GymPal.Controllers
              return View();
          }
 
-         [HttpGet("newregister")]
-          public IActionResult register()
-          {
-              return View("register");
-          }
+        //  [HttpGet("newregister")]
+        //   public IActionResult register()
+        //   {
+        //       return View("register");
+        //   }
      }
 }

@@ -21,7 +21,7 @@ namespace GymPal.Controllers
         [HttpGet("home")]
         public IActionResult Home()
         {
-            return View("index");
+            return View("Index");
         }
 
 
@@ -41,6 +41,12 @@ namespace GymPal.Controllers
          public IActionResult userLogin()
          {
              return View("UserHome");
+         }
+
+         [HttpGet("logWorkout")]
+         public IActionResult LogWorkout()
+         {
+             return View("LogWorkout");
          }
 
 
