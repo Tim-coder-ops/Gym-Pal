@@ -49,6 +49,12 @@ namespace GymPal.Controllers
              return View("LogWorkout");
          }
 
+         [HttpGet("aboutUs")]
+         public IActionResult AboutUs()
+         {
+             return View("AboutUs");
+         }
+
 
 
         
