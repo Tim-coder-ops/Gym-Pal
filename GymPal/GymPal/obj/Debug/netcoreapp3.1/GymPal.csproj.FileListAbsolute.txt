@@ -64,13 +64,8 @@ C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreap
 C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\GymPal.RazorCoreGenerate.cache
 C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Home\layout-sidenav-light.cshtml.g.cs
 C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Home\layout-static.cshtml.g.cs
-C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Home\login.cshtml.g.cs
 C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Home\password.cshtml.g.cs
-C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Home\tables.cshtml.g.cs
-C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
-C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
-C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\GymPal.RazorTargetAssemblyInfo.cache
@@ -82,9 +77,3 @@ C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreap
 C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\GymPal.pdb
 C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\GymPal.genruntimeconfig.cache
 C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\GymPal.csproj.CopyComplete
-C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\register.cshtml.g.cs
-C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\UserHome.cshtml.g.cs
-C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\LogWorkout.cshtml.g.cs
-C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Index1.cshtml.g.cs
-C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Index.cshtml.g.cs
-C:\Users\Timwe\OneDrive\Documents\MSSA\Gym Pal\GymPal\GymPal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AboutUs.cshtml.g.cs
