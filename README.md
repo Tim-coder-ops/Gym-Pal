@@ -9,36 +9,45 @@
  7) User Stories
  8) Use Case Diagram
  
-## <div align="Center"> Inspiration</div>
+## <div align="Center"> Inspiration</div>  [(Back to top)](#table-of-contents)
 Throughout my time in the gym I have searched for gym apps that have all the features that I would want within a workout tracking app. I was never able to find one that had all of my desired functions. I have decided to create this application myself.
 
-## <div align="Center"> Concept</div>
+
+## <div align="Center"> Concept</div> [(Back to top)](#table-of-contents)
 This app should allow a user to effectively track all their workout and give them information to look back on to improve. It should have a list of available exercises per bodypart. It should allow the user to see their past weights and reps per exercise and view a graph of their volume.
 
-## <div align="Center"> Wire-Frames</div>
+
+## <div align="Center"> Wire-Frames</div> [(Back to top)](#table-of-contents)
 The Home Page will have an integrated GIF of a gym, along with a features list and buttons to become a user and sign in.
 ![Home Page](https://github.com/Tim-coder-ops/Gym-Pal/blob/master/Wire%20Diagram%20PDFs/New%20Project%201/Application%20Wire-frames/Homepage.png)
+
 
 The sign in page will prompt the user for their username and password. A link will also be on the page for users who forget their password.
 ![Sign in Page](https://github.com/Tim-coder-ops/Gym-Pal/blob/master/Wire%20Diagram%20PDFs/New%20Project%201/Application%20Wire-frames/Sign%20In.png)
 
 
+
 The User Page will display a chart showing the users overall body volume. It will also show a chart for the users body weight. It will also provide links to all the funnctions of the app.
 ![User Page](https://github.com/Tim-coder-ops/Gym-Pal/blob/master/Wire%20Diagram%20PDFs/New%20Project%201/Application%20Wire-frames/User%20Page.png)
+
 
 The Create an Account will allow the user to select a username, password, and input current body weight.
 ![Create an Account Page](https://github.com/Tim-coder-ops/Gym-Pal/blob/master/Wire%20Diagram%20PDFs/New%20Project%201/Application%20Wire-frames/Become%20a%20User.png)
 
+
 The Log New Excercise page will allow the user to select their exercise and input the wieght and reps of the exercise. It will also display the users past workout to reference in order to ensure they progress.
 ![Log New Exercise](https://github.com/Tim-coder-ops/Gym-Pal/blob/master/Wire%20Diagram%20PDFs/New%20Project%201/Application%20Wire-frames/Log%20New%20Workout.png)
+
 
 The Progress page will allow the user to view their past volume per bodypart along with their past workouts per exercise. These charts will be based on what the users selections. It will also display the users past body weight.
 ![Progress Page](https://github.com/Tim-coder-ops/Gym-Pal/blob/master/Wire%20Diagram%20PDFs/New%20Project%201/Application%20Wire-frames/Progress_Workout%20History.png)
 
-## <div align="Center"> Initial CHEN Diagram</div>
+
+## <div align="Center"> Initial ERD</div> [(Back to top)](#table-of-contents)
 ![Initial CHEN Diagram](https://github.com/Tim-coder-ops/Gym-Pal/blob/master/Initial%20CHEN%20Diagram.PNG)
 
-## <div align="Center"> Requirements</div>
+
+## <div align="Center"> Requirements</div> [(Back to top)](#table-of-contents)
 [Requirements Document](https://github.com/Tim-coder-ops/Gym-Pal/blob/master/Gym%20Pal%20Requirements.docx)
 | Requirement ID | Requirement                                                         |
 |----------------|-----------------------------------------------------------------------------------------------------|
@@ -80,7 +89,7 @@ The Progress page will allow the user to view their past volume per bodypart alo
 |   10.2.0       | System must access all of the users past exercises.                                                 |
 
 
-## <div align="Center"> Test Table</div>
+## <div align="Center"> Test Table</div> [(Back to top)](#table-of-contents)
 
 | Test ID | Requirement ID | Test Procedure                                                                                                                                                                      | Status     | Time Stamp |
 |---------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|------------|
@@ -95,7 +104,8 @@ The Progress page will allow the user to view their past volume per bodypart alo
 | 9       | 9.0.0          | Log multiple body weights under a logged in user. Ensure that the weights are saved in the database.                                                                                | Not Tested |            |
 | 10      | 10.0.0         | Ensure that multiple exercises are stored in the database. Then go to the progress page and select an exercise that is stored. It should display the past sets per exercise.        | Not Tested |            |
 
-## <div align="Center"> User Stories</div>
+
+## <div align="Center"> User Stories</div> [(Back to top)](#table-of-contents)
 User Story #1:
 As a user 
 I need to be able to track my past weights and reps for exercises.
@@ -116,5 +126,7 @@ As a user
 I want to be able to have a workout buddy that can view my workouts.
 So that we can work together and motivate one another. 
 
-## <div align="Center"> Use Case Diagram</div>
+
+## <div align="Center"> Use Case Diagram</div> [(Back to top)](#table-of-contents)
 ![Use Case Diagram](https://github.com/Tim-coder-ops/Gym-Pal/blob/master/Use%20Case%20Diagram.PNG)
+
