@@ -3,20 +3,21 @@
  1) [Inspiration](#Inspiration)
  2) [Concept](#concept)
  3) [Wire-Frames](#wire-frames)
- 4) Initial_CHEN_Diagram
+ 4) [Initial ERD](#ERD)
  5) [Requirements](#requirements)
- 6) Test Table
- 7) User Stories
- 8) Use Case Diagram
- 
+ 6) [Test Table](#test-table)
+ 7) [User Stories](#user-stories)
+ 8) [Use Case Diagram](#use-case-diagram)
+
+# <a name="Inspiration"></a>
 ## <div align="Center"> Inspiration</div>  [(Back to top)](#table-of-contents)
 Throughout my time in the gym I have searched for gym apps that have all the features that I would want within a workout tracking app. I was never able to find one that had all of my desired functions. I have decided to create this application myself.
 
-
+# <a name="concept"></a>
 ## <div align="Center"> Concept</div> [(Back to top)](#table-of-contents)
 This app should allow a user to effectively track all their workout and give them information to look back on to improve. It should have a list of available exercises per bodypart. It should allow the user to see their past weights and reps per exercise and view a graph of their volume.
 
-
+# <a name="wire-frames"></a>
 ## <div align="Center"> Wire-Frames</div> [(Back to top)](#table-of-contents)
 The Home Page will have an integrated GIF of a gym, along with a features list and buttons to become a user and sign in.
 ![Home Page](https://github.com/Tim-coder-ops/Gym-Pal/blob/master/Wire%20Diagram%20PDFs/New%20Project%201/Application%20Wire-frames/Homepage.png)
@@ -42,11 +43,11 @@ The Log New Excercise page will allow the user to select their exercise and inpu
 The Progress page will allow the user to view their past volume per bodypart along with their past workouts per exercise. These charts will be based on what the users selections. It will also display the users past body weight.
 ![Progress Page](https://github.com/Tim-coder-ops/Gym-Pal/blob/master/Wire%20Diagram%20PDFs/New%20Project%201/Application%20Wire-frames/Progress_Workout%20History.png)
 
-
+# <a name="ERD"></a>
 ## <div align="Center"> Initial ERD</div> [(Back to top)](#table-of-contents)
 ![Initial CHEN Diagram](https://github.com/Tim-coder-ops/Gym-Pal/blob/master/Initial%20CHEN%20Diagram.PNG)
 
-
+# <a name="requirements"></a>
 ## <div align="Center"> Requirements</div> [(Back to top)](#table-of-contents)
 [Requirements Document](https://github.com/Tim-coder-ops/Gym-Pal/blob/master/Gym%20Pal%20Requirements.docx)
 | Requirement ID | Requirement                                                         |
@@ -88,7 +89,7 @@ The Progress page will allow the user to view their past volume per bodypart alo
 |   10.1.0       | System must obtain users selected body part and exercise from GUI                                   |
 |   10.2.0       | System must access all of the users past exercises.                                                 |
 
-
+# <a name="test-table"></a>
 ## <div align="Center"> Test Table</div> [(Back to top)](#table-of-contents)
 
 | Test ID | Requirement ID | Test Procedure                                                                                                                                                                      | Status     | Time Stamp |
@@ -104,7 +105,7 @@ The Progress page will allow the user to view their past volume per bodypart alo
 | 9       | 9.0.0          | Log multiple body weights under a logged in user. Ensure that the weights are saved in the database.                                                                                | Not Tested |            |
 | 10      | 10.0.0         | Ensure that multiple exercises are stored in the database. Then go to the progress page and select an exercise that is stored. It should display the past sets per exercise.        | Not Tested |            |
 
-
+# <a name="user-stories"></a>
 ## <div align="Center"> User Stories</div> [(Back to top)](#table-of-contents)
 User Story #1:
 As a user 
@@ -126,7 +127,7 @@ As a user
 I want to be able to have a workout buddy that can view my workouts.
 So that we can work together and motivate one another. 
 
-
+# <a name="use-case-diagram"></a>
 ## <div align="Center"> Use Case Diagram</div> [(Back to top)](#table-of-contents)
 ![Use Case Diagram](https://github.com/Tim-coder-ops/Gym-Pal/blob/master/Use%20Case%20Diagram.PNG)
 
