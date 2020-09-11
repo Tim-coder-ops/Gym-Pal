@@ -8,6 +8,7 @@
  6) [Test Table](#test-table)
  7) [User Stories](#user-stories)
  8) [Use Case Diagram](#use-case-diagram)
+ 9) [Prototypes](#prototypes)
 
 # <a name="Inspiration"></a>
 ## <div align="Center"> Inspiration</div>  [(Back to top)](#table-of-contents)
@@ -130,4 +131,9 @@ So that we can work together and motivate one another.
 # <a name="use-case-diagram"></a>
 ## <div align="Center"> Use Case Diagram</div> [(Back to top)](#table-of-contents)
 ![Use Case Diagram](https://github.com/Tim-coder-ops/Gym-Pal/blob/master/Use%20Case%20Diagram.PNG)
+
+
+# <a name="prototypes"></a>
+## <div align="Center"> Prototypes </div> [(Back to top)](#table-of-contents)
+[Prototypes of Gym Pal](https://github.com/Tim-coder-ops/Gym-Pal/tree/master/Prototypes)
 
