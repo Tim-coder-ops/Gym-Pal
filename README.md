@@ -137,3 +137,6 @@ So that we can work together and motivate one another.
 ## <div align="Center"> Prototypes </div> [(Back to top)](#table-of-contents)
 [Prototypes of Gym Pal](https://github.com/Tim-coder-ops/Gym-Pal/tree/master/Prototypes)
 
+# <a name="Database Diagram"></a>
+## <div align="Center"> Prototypes </div> [(Back to top)](#table-of-contents)
+[Database Diagram](https://github.com/Tim-coder-ops/Gym-Pal/blob/master/Database%20Diagram.PNG)
