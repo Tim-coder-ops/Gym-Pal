@@ -1,35 +1,43 @@
 DROP TABLE IF EXISTS [Excercises]
 CREATE TABLE [Excercises] (
-  [ExerciseID] INT PRIMARY KEY,
+  [ID] INT PRIMARY KEY IDENTITY,
   [BodyPart]  VARCHAR(20),
   [Excercise] VARCHAR(20),
   [TypeOfWorkout] VARCHAR(20)
 );
 
-DROP TABLE IF EXISTS [Workout History]
-CREATE TABLE [Workout History] (
+DROP TABLE IF EXISTS [Workout]
+CREATE TABLE [Workout] (
   ID INT IDENTITY(1,1) PRIMARY KEY,
-  [Workout Number] INT ,
-  [ExerciseID] INT,
-  [SetID] INT,
-  [UserID] INT,
+  [Workout Number] INT,
+  [UserID] INT FOREIGN KEY REFERENCES Users(ID),
+  [Date] Date
+);
+
+DROP TABLE IF EXISTS [Sets]
+CREATE TABLE [Sets] (
+  ID INT IDENTITY(1,1) PRIMARY KEY,
+  [ExerciseID] INT FOREIGN KEY REFERENCES Exercises(ID),
   [NumberOfReps] INT,
   [Weight] INT,
-  [Date] Date
+  [Workout ID] INT FOREIGN KEY REFERENCES Workout(ID)
 );
 
 DROP TABLE IF EXISTS [Progress]
 CREATE TABLE [Progress] (
-  [UserID] INT,
-  [Date] Date PRIMARY KEY,
-  [Weight] INT
+  [ID] INT PRIMARY KEY IDENTITY ,
+  [Date] DATE,
+  [BodyWeight] INT,
+  [UserID] INT FOREIGN KEY REFERENCES Users(ID)
 );
 
 DROP TABLE IF EXISTS [Users]
 CREATE TABLE [Users] (
-  [UserID] INT PRIMARY KEY,
-  [FirstName] VARCHAR(20),
-  [LastName] VARCHAR(20)
+  [ID] INT PRIMARY KEY IDENTITY,
+  [FirstName] NVARCHAR(40),
+  [LastName] NVARCHAR(40),
+  [Email] NVARCHAR(120),
+  [Password] NVARCHAR(50)
 );
 
 INSERT INTO [Excercises] (ExerciseID, BodyPart, Excercise, TypeOfWorkout)
