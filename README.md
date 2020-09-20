@@ -139,4 +139,4 @@ So that we can work together and motivate one another.
 
 # <a name="Database Diagram"></a>
 ## <div align="Center"> Prototypes </div> [(Back to top)](#table-of-contents)
-[Database Diagram](https://github.com/Tim-coder-ops/Gym-Pal/blob/master/Database%20Diagram.PNG)
+![Database Diagram](https://github.com/Tim-coder-ops/Gym-Pal/blob/master/Database%20Diagram.PNG)
