@@ -1,4 +1,5 @@
-﻿@{
+﻿@model GymPal.Models.Users
+@{
     Layout = null;
 }
 <!DOCTYPE html>
@@ -23,30 +24,34 @@
                             <div class="card shadow-lg border-0 rounded-lg mt-5">
                                 <div class="card-header"><h3 class="text-center font-weight-light my-4">Create Account</h3></div>
                                 <div class="card-body">
-                                    <form>
+                                    <form asp-action="Create" asp-controller="Users">
                                         <div class="form-row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label class="small mb-1" for="inputFirstName">First Name</label>
-                                                    <input class="form-control py-4" id="inputFirstName" type="text" placeholder="Enter first name" />
+                                                    <label asp-for="FirstName" class="control-label"></label>
+                                                    <input asp-for="FirstName" class="form-control" />
+                                                    <span asp-validation-for="FirstName" class="text-danger"></span>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label class="small mb-1" for="inputLastName">Last Name</label>
-                                                    <input class="form-control py-4" id="inputLastName" type="text" placeholder="Enter last name" />
+                                                    <label asp-for="LastName" class="control-label"></label>
+                                                    <input asp-for="LastName" class="form-control" />
+                                                    <span asp-validation-for="LastName" class="text-danger"></span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="small mb-1" for="inputEmailAddress">Email</label>
-                                            <input class="form-control py-4" id="inputEmailAddress" type="email" aria-describedby="emailHelp" placeholder="Enter email address" />
+                                            <label asp-for="Email" class="control-label"></label>
+                                            <input asp-for="Email" class="form-control" />
+                                            <span asp-validation-for="Email" class="text-danger"></span>
                                         </div>
                                         <div class="form-row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label class="small mb-1" for="inputPassword">Password</label>
-                                                    <input class="form-control py-4" id="inputPassword" type="password" placeholder="Enter password" />
+                                                    <label asp-for="Password" class="control-label"></label>
+                                                    <input asp-for="Password" class="form-control" />
+                                                    <span asp-validation-for="Password" class="text-danger"></span>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
@@ -56,7 +61,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-group mt-4 mb-0"><a class="btn btn-primary btn-block text-light" href="login.html">Create Account</a></div>
+                                        <div class="form-group mt-4 mb-0">
+                                            <input type="submit" value="Create" class="btn btn-primary btn-block text-light" />
+                                        </div>
                                     </form>
                                 </div>
                                 <div class="card-footer text-center">
@@ -88,3 +95,6 @@
     <script src="js/scripts.js"></script>
 </body>
 </html>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
