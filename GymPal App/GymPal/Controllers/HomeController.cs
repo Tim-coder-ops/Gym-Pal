@@ -37,11 +37,7 @@ namespace GymPal.Controllers
              return View("register");
          }
 
-         [HttpGet("userLogin")]
-         public IActionResult userLogin()
-         {
-             return View("UserHome");
-         }
+         
 
          [HttpGet("logWorkout")]
          public IActionResult LogWorkout()
