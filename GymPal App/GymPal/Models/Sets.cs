@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace GymPal.Models
 {
@@ -7,6 +8,8 @@ namespace GymPal.Models
     {
         public int Id { get; set; }
         public int? ExerciseId { get; set; }
+
+        [Display(Name = "Number of Reps")]
         public int? NumberOfReps { get; set; }
         public int? Weight { get; set; }
         public int? WorkoutId { get; set; }

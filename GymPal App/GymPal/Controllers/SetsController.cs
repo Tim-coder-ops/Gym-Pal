@@ -13,6 +13,13 @@ namespace GymPal.Controllers
     {
         private readonly GymPalDbContext _context;
 
+        public async Task<IActionResult> UserHome(string searchString)
+        {
+
+            var gymPalDbContext = _context.Sets.Include(s => s.Exercise).Include(s => s.Workout);
+            return View(await gymPalDbContext.ToListAsync());
+        }
+
         public SetsController(GymPalDbContext context)
         {
             _context = context;
@@ -160,6 +167,11 @@ namespace GymPal.Controllers
         private bool SetsExists(int id)
         {
             return _context.Sets.Any(e => e.Id == id);
+        }
+        [HttpGet("LogNewWorkout")]
+        public IActionResult LogNewWorkout()
+        {
+            return View();
         }
     }
 }

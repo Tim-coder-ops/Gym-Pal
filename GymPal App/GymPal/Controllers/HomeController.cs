@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using GymPal.Models;
+using GymPal.Controllers;
 
 namespace GymPal.Controllers
 {
@@ -51,8 +52,9 @@ namespace GymPal.Controllers
              return View("AboutUs");
          }
 
-
-
         
+
+
+
     }
 }
