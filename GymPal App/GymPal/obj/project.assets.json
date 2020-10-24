@@ -8827,11 +8827,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Timwe\\OneDrive\\Desktop\\GymPal App\\GymPal\\GymPal.csproj",
+      "projectUniqueName": "C:\\Users\\Timwe\\OneDrive\\Documents\\MSSA\\Gym Pal\\GymPal App\\GymPal\\GymPal.csproj",
       "projectName": "GymPal",
-      "projectPath": "C:\\Users\\Timwe\\OneDrive\\Desktop\\GymPal App\\GymPal\\GymPal.csproj",
+      "projectPath": "C:\\Users\\Timwe\\OneDrive\\Documents\\MSSA\\Gym Pal\\GymPal App\\GymPal\\GymPal.csproj",
       "packagesPath": "C:\\Users\\Timwe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Timwe\\OneDrive\\Desktop\\GymPal App\\GymPal\\obj\\",
+      "outputPath": "C:\\Users\\Timwe\\OneDrive\\Documents\\MSSA\\Gym Pal\\GymPal App\\GymPal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Timwe\\AppData\\Roaming\\NuGet\\NuGet.Config",
