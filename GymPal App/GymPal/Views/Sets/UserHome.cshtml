@@ -20,7 +20,7 @@
 </head>
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-        <a class="navbar-brand" href="home"><img src="img\Logo.png" alt=""></a>
+        <a class="navbar-brand" href="home"><img src="~/img/Logo.png" alt=""></a>
         <!-- Navbar Search-->
         @*<form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
                 <div class="input-group">
@@ -160,7 +160,7 @@
                                     <thead>
                                         <tr>
                                             <th>
-                                                @Html.DisplayNameFor(model => model.ExerciseId)
+                                                @Html.DisplayNameFor(model => model.Exercise)
                                             </th>
                                             <th>
                                                 @Html.DisplayNameFor(model => model.Weight)
@@ -179,7 +179,7 @@
                                         {
                                             <tr>
                                                 <td>
-                                                    @Html.DisplayFor(modelItem => item.ExerciseId)
+                                                    @Html.DisplayFor(modelItem => item.Exercise)
                                                 </td>
                                                 <td>
                                                     @Html.DisplayFor(modelItem => item.Weight)
@@ -192,7 +192,7 @@
                                                 </td>
                                                 <td>
                                                     <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                                                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                                                    @*<a asp-action="Details" asp-route-id="@item.Id">Details</a> |*@
                                                     <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
                                                 </td>
                                             </tr>

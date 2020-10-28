@@ -75,7 +75,7 @@ namespace GymPal.Controllers
             }
             ViewData["ExerciseId"] = new SelectList(_context.Exercises, "Id", "Id", sets.ExerciseId);
             ViewData["WorkoutId"] = new SelectList(_context.Workout, "Id", "Id", sets.WorkoutId);
-            return View(sets);
+            return View("LogNewWorkout");
         }
 
         // GET: Sets/Edit/5
