@@ -484,8 +484,6 @@ C:\Users\Timwe\OneDrive\Desktop\GymPal App\GymPal\bin\Debug\netcoreapp3.1\runtim
 C:\Users\Timwe\OneDrive\Desktop\GymPal App\GymPal\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Timwe\OneDrive\Desktop\GymPal App\GymPal\obj\Debug\netcoreapp3.1\GymPal.AssemblyInfoInputs.cache
 C:\Users\Timwe\OneDrive\Desktop\GymPal App\GymPal\obj\Debug\netcoreapp3.1\GymPal.AssemblyInfo.cs
-C:\Users\Timwe\OneDrive\Desktop\GymPal App\GymPal\obj\Debug\netcoreapp3.1\GymPal.csproj.CoreCompileInputs.cache
-C:\Users\Timwe\OneDrive\Desktop\GymPal App\GymPal\obj\Debug\netcoreapp3.1\GymPal.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Timwe\OneDrive\Desktop\GymPal App\GymPal\obj\Debug\netcoreapp3.1\GymPal.RazorAssemblyInfo.cache
 C:\Users\Timwe\OneDrive\Desktop\GymPal App\GymPal\obj\Debug\netcoreapp3.1\GymPal.RazorAssemblyInfo.cs
 C:\Users\Timwe\OneDrive\Desktop\GymPal App\GymPal\obj\Debug\netcoreapp3.1\GymPal.TagHelpers.input.cache
@@ -545,3 +543,5 @@ C:\Users\Timwe\OneDrive\Desktop\GymPal App\GymPal\obj\Debug\netcoreapp3.1\GymPal
 C:\Users\Timwe\OneDrive\Desktop\GymPal App\GymPal\obj\Debug\netcoreapp3.1\GymPal.pdb
 C:\Users\Timwe\OneDrive\Desktop\GymPal App\GymPal\obj\Debug\netcoreapp3.1\GymPal.genruntimeconfig.cache
 C:\Users\Timwe\OneDrive\Desktop\GymPal App\GymPal\obj\Debug\netcoreapp3.1\GymPal.csprojAssemblyReference.cache
+C:\Users\Timwe\OneDrive\Desktop\GymPal App\GymPal\obj\Debug\netcoreapp3.1\GymPal.csproj.CoreCompileInputs.cache
+C:\Users\Timwe\OneDrive\Desktop\GymPal App\GymPal\obj\Debug\netcoreapp3.1\GymPal.MvcApplicationPartsAssemblyInfo.cache

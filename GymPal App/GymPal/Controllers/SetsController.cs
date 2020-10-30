@@ -15,9 +15,19 @@ namespace GymPal.Controllers
 
         public async Task<IActionResult> UserHome(string searchString)
         {
+            
+            var sets = from s in _context.Sets
+                       join ex in _context.Exercises on s.ExerciseId equals ex.Id
+                       select s;
 
-            var gymPalDbContext = _context.Sets.Include(s => s.Exercise).Include(s => s.Workout);
-            return View(await gymPalDbContext.ToListAsync());
+            if(!String.IsNullOrEmpty(searchString))
+            {
+                sets = sets.Where(t => t.Exercise.Excercise.Contains(searchString));
+            }
+
+            //var gymPalDbContext = _context.Sets.Include(s => s.Exercise).Include(s => s.Workout);
+            //return View(await gymPalDbContext.ToListAsync());
+            return View(await sets.ToListAsync());
         }
 
         public SetsController(GymPalDbContext context)
