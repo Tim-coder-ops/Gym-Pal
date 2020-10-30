@@ -12,7 +12,7 @@ namespace GymPal.Models
 
         public int Id { get; set; }
         public string BodyPart { get; set; }
-        public string Excercise { get; set; }
+        public string Exercise { get; set; }
         public string TypeOfWorkout { get; set; }
 
         public virtual ICollection<Sets> Sets { get; set; }

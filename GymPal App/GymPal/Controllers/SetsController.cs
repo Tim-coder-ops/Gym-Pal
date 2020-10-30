@@ -13,32 +13,24 @@ namespace GymPal.Controllers
     {
         private readonly GymPalDbContext _context;
 
-        public async Task<IActionResult> UserHome(string searchString)
-        {
-            
-            var sets = from s in _context.Sets
-                       join ex in _context.Exercises on s.ExerciseId equals ex.Id
-                       select s;
-
-            if(!String.IsNullOrEmpty(searchString))
-            {
-                sets = sets.Where(t => t.Exercise.Excercise.Contains(searchString));
-            }
-
-            //var gymPalDbContext = _context.Sets.Include(s => s.Exercise).Include(s => s.Workout);
-            //return View(await gymPalDbContext.ToListAsync());
-            return View(await sets.ToListAsync());
-        }
-
         public SetsController(GymPalDbContext context)
         {
             _context = context;
         }
 
+        
+        public async Task<IActionResult> UserHome()
+        {
+            var gymPalDbContext = _context.Sets.Include(s => s.ExerciseNavigation).Include(s => s.Workout);
+            return View(await gymPalDbContext.ToListAsync());
+        }
+
+        
+
         // GET: Sets
         public async Task<IActionResult> Index()
         {
-            var gymPalDbContext = _context.Sets.Include(s => s.Exercise).Include(s => s.Workout);
+            var gymPalDbContext = _context.Sets.Include(s => s.ExerciseNavigation).Include(s => s.Workout);
             return View(await gymPalDbContext.ToListAsync());
         }
 
@@ -51,7 +43,7 @@ namespace GymPal.Controllers
             }
 
             var sets = await _context.Sets
-                .Include(s => s.Exercise)
+                .Include(s => s.ExerciseNavigation)
                 .Include(s => s.Workout)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (sets == null)
@@ -65,7 +57,7 @@ namespace GymPal.Controllers
         // GET: Sets/Create
         public IActionResult Create()
         {
-            ViewData["ExerciseId"] = new SelectList(_context.Exercises, "Id", "Id");
+            ViewData["Exercise"] = new SelectList(_context.Exercises, "Exercise", "Exercise");
             ViewData["WorkoutId"] = new SelectList(_context.Workout, "Id", "Id");
             return View();
         }
@@ -75,17 +67,18 @@ namespace GymPal.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,ExerciseId,NumberOfReps,Weight,WorkoutId")] Sets sets)
+        public async Task<IActionResult> Create([Bind("Id,Exercise,NumberOfReps,Weight,WorkoutId")] Sets sets)
         {
             if (ModelState.IsValid)
             {
                 _context.Add(sets);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(LogNewWorkout));
             }
-            ViewData["ExerciseId"] = new SelectList(_context.Exercises, "Id", "Id", sets.ExerciseId);
+            ViewData["Exercise"] = new SelectList(_context.Exercises, "Exercise", "Exercise", sets.Exercise);
             ViewData["WorkoutId"] = new SelectList(_context.Workout, "Id", "Id", sets.WorkoutId);
-            return View("LogNewWorkout");
+            //return View(sets);
+            return RedirectToAction(nameof(LogNewWorkout));
         }
 
         // GET: Sets/Edit/5
@@ -101,7 +94,7 @@ namespace GymPal.Controllers
             {
                 return NotFound();
             }
-            ViewData["ExerciseId"] = new SelectList(_context.Exercises, "Id", "Id", sets.ExerciseId);
+            ViewData["Exercise"] = new SelectList(_context.Exercises, "Exercise", "Exercise", sets.Exercise);
             ViewData["WorkoutId"] = new SelectList(_context.Workout, "Id", "Id", sets.WorkoutId);
             return View(sets);
         }
@@ -111,7 +104,7 @@ namespace GymPal.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,ExerciseId,NumberOfReps,Weight,WorkoutId")] Sets sets)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Exercise,NumberOfReps,Weight,WorkoutId")] Sets sets)
         {
             if (id != sets.Id)
             {
@@ -136,9 +129,9 @@ namespace GymPal.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(UserHome));
             }
-            ViewData["ExerciseId"] = new SelectList(_context.Exercises, "Id", "Id", sets.ExerciseId);
+            ViewData["Exercise"] = new SelectList(_context.Exercises, "Exercise", "Exercise", sets.Exercise);
             ViewData["WorkoutId"] = new SelectList(_context.Workout, "Id", "Id", sets.WorkoutId);
             return View(sets);
         }
@@ -152,7 +145,7 @@ namespace GymPal.Controllers
             }
 
             var sets = await _context.Sets
-                .Include(s => s.Exercise)
+                .Include(s => s.ExerciseNavigation)
                 .Include(s => s.Workout)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (sets == null)
@@ -171,17 +164,23 @@ namespace GymPal.Controllers
             var sets = await _context.Sets.FindAsync(id);
             _context.Sets.Remove(sets);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(UserHome));
         }
 
         private bool SetsExists(int id)
         {
             return _context.Sets.Any(e => e.Id == id);
         }
-        [HttpGet("LogNewWorkout")]
+
         public IActionResult LogNewWorkout()
         {
+
             return View();
         }
+
+
+
     }
+
+
 }

@@ -26,7 +26,7 @@ namespace GymPal.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=DESKTOP-4TCPJEH;Database=GymPalDb;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=desktop-4tcpjeh;Database=GymPalDb;Trusted_Connection=True;");
             }
         }
 
@@ -34,15 +34,20 @@ namespace GymPal.Models
         {
             modelBuilder.Entity<Exercises>(entity =>
             {
-                entity.Property(e => e.Id).HasColumnName("ID");
+                entity.HasKey(e => e.Exercise)
+                    .HasName("PK__Exercise__051A1073244938F2");
+
+                entity.Property(e => e.Exercise)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
 
                 entity.Property(e => e.BodyPart)
                     .HasMaxLength(20)
                     .IsUnicode(false);
 
-                entity.Property(e => e.Excercise)
-                    .HasMaxLength(20)
-                    .IsUnicode(false);
+                entity.Property(e => e.Id)
+                    .HasColumnName("ID")
+                    .ValueGeneratedOnAdd();
 
                 entity.Property(e => e.TypeOfWorkout)
                     .HasMaxLength(20)
@@ -60,26 +65,28 @@ namespace GymPal.Models
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.Progress)
                     .HasForeignKey(d => d.UserId)
-                    .HasConstraintName("FK__Progress__UserID__4316F928");
+                    .HasConstraintName("FK__Progress__UserID__0D7A0286");
             });
 
             modelBuilder.Entity<Sets>(entity =>
             {
                 entity.Property(e => e.Id).HasColumnName("ID");
 
-                entity.Property(e => e.ExerciseId).HasColumnName("ExerciseID");
+                entity.Property(e => e.Exercise)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
 
                 entity.Property(e => e.WorkoutId).HasColumnName("Workout ID");
 
-                entity.HasOne(d => d.Exercise)
+                entity.HasOne(d => d.ExerciseNavigation)
                     .WithMany(p => p.Sets)
-                    .HasForeignKey(d => d.ExerciseId)
-                    .HasConstraintName("FK__Sets__ExerciseID__3F466844");
+                    .HasForeignKey(d => d.Exercise)
+                    .HasConstraintName("FK__Sets__Exercise__09A971A2");
 
                 entity.HasOne(d => d.Workout)
                     .WithMany(p => p.Sets)
                     .HasForeignKey(d => d.WorkoutId)
-                    .HasConstraintName("FK__Sets__Workout ID__403A8C7D");
+                    .HasConstraintName("FK__Sets__Workout ID__0A9D95DB");
             });
 
             modelBuilder.Entity<Users>(entity =>
@@ -108,7 +115,7 @@ namespace GymPal.Models
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.Workout)
                     .HasForeignKey(d => d.UserId)
-                    .HasConstraintName("FK__Workout__UserID__31EC6D26");
+                    .HasConstraintName("FK__Workout__UserID__06CD04F7");
             });
 
             OnModelCreatingPartial(modelBuilder);

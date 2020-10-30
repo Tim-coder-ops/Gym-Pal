@@ -1,4 +1,5 @@
-﻿@{
+﻿
+@{
     Layout = null;
 }
 @model GymPal.Models.Sets
@@ -12,8 +13,8 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Log New Workout</title>
-    <link href="css/styles.css" rel="stylesheet" />
-    <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
+    <link href="~/css/styles.css" rel="stylesheet" />
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
 </head>
 <body class="sb-nav-fixed">
@@ -21,13 +22,13 @@
         <a class="navbar-brand" href="home"><img src="img\Logo.png" alt=""></a>
         <!-- Navbar Search-->
         @*<form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-            <div class="input-group">
-                <input class="form-control" type="text" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2" />
-                <div class="input-group-append">
-                    <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2" />
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
+                    </div>
                 </div>
-            </div>
-        </form>*@
+            </form>*@
         <!-- Navbar-->
         <ul class="navbar-nav ml-auto ml-md-0">
             <li class="nav-item dropdown">
@@ -90,201 +91,201 @@
             <main>
                 <div class="container-fluid">
                     <h1 class="mt-4">Log New Workout</h1>
-        <div class="row">
-        <div class="col-md-4 container-fluid">
-            <form asp-action="Create" asp-controller="sets">
-                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                <div class="form-group">
-                    <label asp-for="ExerciseId" class="control-label">Body Part</label>
-                    <select >
-                        <option>Select the primary body part the exercise targets</option>
-                        <option>Chest</option>
-                        <option>Back</option>
-                        <option>Arms</option>
-                        <option>Shoulders</option>
-                        <option>Legs</option>
-                    </select>
-            
-                     @* <label asp-for="ExerciseId" class="control-label">Bodypart</label>
-                    <select asp-for="ExerciseId" class ="form-control" asp-items="ViewBag.ExerciseId"></select>  *@
-                </div>
-                <div class="form-group">
-                    <label asp-for="ExerciseId" class="control-label">Exercise</label>
-                    <select asp-for="ExerciseId" class ="form-control" asp-items="ViewBag.ExerciseId"></select>
-                </div>
-                <div class="form-group">
-                    <label asp-for="NumberOfReps" class="control-label"> Reps</label>
-                    <input asp-for="NumberOfReps" class="form-control" />
-                    <span asp-validation-for="NumberOfReps" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="Weight" class="control-label"></label>
-                    <input asp-for="Weight" class="form-control" />
-                    <span asp-validation-for="Weight" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="WorkoutId" class="control-label"></label>
-                    <select asp-for="WorkoutId" class ="form-control" asp-items="ViewBag.WorkoutId"></select>
-                </div>
-                <div class="form-group">
-                    <input type="submit" value="Create" class="btn btn-primary" />
-                </div>
-            </form>
-        </div>
-    </div>
+                    <div class="row">
+                        <div class="col-md-4 container-fluid">
+                            <form asp-action="Create" asp-controller="sets">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                <div class="form-group">
+                                    <label asp-for="Exercise" class="control-label">Body Part</label>
+                                    <select>
+                                        <option>Select the primary body part the exercise targets</option>
+                                        <option>Chest</option>
+                                        <option>Back</option>
+                                        <option>Arms</option>
+                                        <option>Shoulders</option>
+                                        <option>Legs</option>
+                                    </select>
 
-                    
-    <div class="card mb-4 ">
-        <div class="card-header">
-            <i class="fas fa-table mr-1"></i>
-            Exercise History
-        </div>
-        <div class="card-body">
-            <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                    <thead>
-                        <tr>
-                            <th>Exercise</th>
-                            <th>Set Number</th>
-                            <th>Weight</th>
-                            <th>Reps</th>
-                            <th>Date</th>
-                        </tr>
-                    </thead>
-                    <tfoot>
-                        <tr>
-                            <th>Exercise</th>
-                            <th>Set Number</th>
-                            <th>Weight</th>
-                            <th>Reps</th>
-                            <th>Date</th>
-                        </tr>
-                    </tfoot>
-                    <tbody>
-                        <tr>
-                            <td>Bench Press</td>
-                            <td>1</td>
-                            <td>205lb</td>
-                            <td>13</td>
-                            <td>8/07/2020</td>
-                        </tr>
-                        <tr>
-                            <td>Bench Press</td>
-                            <td>2</td>
-                            <td>205lb</td>
-                            <td>10</td>
-                            <td>8/07/2020</td>
-                        </tr>
-                        <tr>
-                            <td>Bench Press</td>
-                            <td>3</td>
-                            <td>225lb</td>
-                            <td>7</td>
-                            <td>8/07/2020</td>
-                        </tr>
-                        <tr>
-                            <td>Bench Press</td>
-                            <td>4</td>
-                            <td>225lb</td>
-                            <td>5</td>
-                            <td>8/07/2020</td>
-                        </tr>
-                        <tr>
-                            <td>Bench Press</td>
-                            <td>1</td>
-                            <td>205lb</td>
-                            <td>13</td>
-                            <td>8/07/2020</td>
-                        </tr>
-                        <tr>
-                            <td>Lat Pull Downs</td>
-                            <td>1</td>
-                            <td>180lb</td>
-                            <td>12</td>
-                            <td>8/07/2020</td>
-                        </tr>
-                        <tr>
-                            <td>Lat Pull Downs</td>
-                            <td>2</td>
-                            <td>180lb</td>
-                            <td>11</td>
-                            <td>8/07/2020</td>
-                        </tr>
-                        <tr>
-                            <td>Lat Pull Downs</td>
-                            <td>3</td>
-                            <td>200lb</td>
-                            <td>10</td>
-                            <td>8/07/2020</td>
-                        </tr>
-                        <tr>
-                            <td>Lat Pull Downs</td>
-                            <td>4</td>
-                            <td>220lb</td>
-                            <td>8</td>
-                            <td>8/07/2020</td>
-                        </tr>
-                        <tr>
-                            <td>Dumbell Flys</td>
-                            <td>1</td>
-                            <td>35lb</td>
-                            <td>12</td>
-                            <td>8/07/2020</td>
-                        </tr>
-                        <tr>
-                            <td>Dumbell Flys</td>
-                            <td>2</td>
-                            <td>35lb</td>
-                            <td>12</td>
-                            <td>8/07/2020</td>
-                        </tr>
-                        <tr>
-                            <td>Dumbell Flys</td>
-                            <td>3</td>
-                            <td>40lb</td>
-                            <td>10</td>
-                            <td>8/07/2020</td>
-                        </tr>
-                        <tr>
-                            <td>Dumbell Flys</td>
-                            <td>4</td>
-                            <td>45lb</td>
-                            <td>8</td>
-                            <td>8/07/2020</td>
-                        </tr>
-                        <tr>
-                            <td>Cable Rows</td>
-                            <td>1</td>
-                            <td>80lb</td>
-                            <td>12</td>
-                            <td>8/07/2020</td>
-                        </tr>
-                        <tr>
-                            <td>Cable Rows</td>
-                            <td>2</td>
-                            <td>90lb</td>
-                            <td>10</td>
-                            <td>8/07/2020</td>
-                        </tr>
-                        <tr>
-                            <td>Cable Rows</td>
-                            <td>3</td>
-                            <td>90lb</td>
-                            <td>10</td>
-                            <td>8/07/2020</td>
-                        </tr>
-                        <tr>
-                            <td>Cable Rows</td>
-                            <td>4</td>
-                            <td>100lb</td>
-                            <td>8</td>
-                            <td>8/07/2020</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
+                                    @* <label asp-for="ExerciseId" class="control-label">Bodypart</label>
+                                        <select asp-for="ExerciseId" class ="form-control" asp-items="ViewBag.ExerciseId"></select>  *@
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="Exercise" class="control-label">Exercise</label>
+                                    <select asp-for="Exercise" class="form-control" ></select>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="NumberOfReps" class="control-label"> Reps</label>
+                                    <input asp-for="NumberOfReps" class="form-control" />
+                                    <span asp-validation-for="NumberOfReps" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="Weight" class="control-label"></label>
+                                    <input asp-for="Weight" class="form-control" />
+                                    <span asp-validation-for="Weight" class="text-danger"></span>
+                                </div>
+                                @*<div class="form-group">
+                                    <label asp-for="WorkoutId" class="control-label"></label>
+                                    <select asp-for="WorkoutId" class="form-control" ></select>
+                                </div>*@
+                                <div class="form-group">
+                                    <input type="submit" value="Create" class="btn btn-primary" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+                    <div class="card mb-4 ">
+                        <div class="card-header">
+                            <i class="fas fa-table mr-1"></i>
+                            Exercise History
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>Exercise</th>
+                                            <th>Set Number</th>
+                                            <th>Weight</th>
+                                            <th>Reps</th>
+                                            <th>Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Exercise</th>
+                                            <th>Set Number</th>
+                                            <th>Weight</th>
+                                            <th>Reps</th>
+                                            <th>Date</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td>Bench Press</td>
+                                            <td>1</td>
+                                            <td>205lb</td>
+                                            <td>13</td>
+                                            <td>8/07/2020</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bench Press</td>
+                                            <td>2</td>
+                                            <td>205lb</td>
+                                            <td>10</td>
+                                            <td>8/07/2020</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bench Press</td>
+                                            <td>3</td>
+                                            <td>225lb</td>
+                                            <td>7</td>
+                                            <td>8/07/2020</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bench Press</td>
+                                            <td>4</td>
+                                            <td>225lb</td>
+                                            <td>5</td>
+                                            <td>8/07/2020</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bench Press</td>
+                                            <td>1</td>
+                                            <td>205lb</td>
+                                            <td>13</td>
+                                            <td>8/07/2020</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lat Pull Downs</td>
+                                            <td>1</td>
+                                            <td>180lb</td>
+                                            <td>12</td>
+                                            <td>8/07/2020</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lat Pull Downs</td>
+                                            <td>2</td>
+                                            <td>180lb</td>
+                                            <td>11</td>
+                                            <td>8/07/2020</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lat Pull Downs</td>
+                                            <td>3</td>
+                                            <td>200lb</td>
+                                            <td>10</td>
+                                            <td>8/07/2020</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lat Pull Downs</td>
+                                            <td>4</td>
+                                            <td>220lb</td>
+                                            <td>8</td>
+                                            <td>8/07/2020</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dumbell Flys</td>
+                                            <td>1</td>
+                                            <td>35lb</td>
+                                            <td>12</td>
+                                            <td>8/07/2020</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dumbell Flys</td>
+                                            <td>2</td>
+                                            <td>35lb</td>
+                                            <td>12</td>
+                                            <td>8/07/2020</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dumbell Flys</td>
+                                            <td>3</td>
+                                            <td>40lb</td>
+                                            <td>10</td>
+                                            <td>8/07/2020</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dumbell Flys</td>
+                                            <td>4</td>
+                                            <td>45lb</td>
+                                            <td>8</td>
+                                            <td>8/07/2020</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cable Rows</td>
+                                            <td>1</td>
+                                            <td>80lb</td>
+                                            <td>12</td>
+                                            <td>8/07/2020</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cable Rows</td>
+                                            <td>2</td>
+                                            <td>90lb</td>
+                                            <td>10</td>
+                                            <td>8/07/2020</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cable Rows</td>
+                                            <td>3</td>
+                                            <td>90lb</td>
+                                            <td>10</td>
+                                            <td>8/07/2020</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cable Rows</td>
+                                            <td>4</td>
+                                            <td>100lb</td>
+                                            <td>8</td>
+                                            <td>8/07/2020</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
             <footer class="py-4 bg-light mt-auto">
@@ -307,3 +308,4 @@
     <script src="assets/demo/datatables-demo.js"></script>
 </body>
 </html>
+

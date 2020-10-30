@@ -1,8 +1,8 @@
 DROP TABLE IF EXISTS [Exercises]
 CREATE TABLE [Exercises] (
-  [ID] INT PRIMARY KEY IDENTITY,
+  [ID] INT IDENTITY,
   [BodyPart]  VARCHAR(20),
-  [Excercise] VARCHAR(20),
+  [Exercise] VARCHAR(50) PRIMARY KEY,
   [TypeOfWorkout] VARCHAR(20)
 );
 
@@ -17,7 +17,7 @@ CREATE TABLE [Workout] (
 DROP TABLE IF EXISTS [Sets]
 CREATE TABLE [Sets] (
   ID INT IDENTITY PRIMARY KEY,
-  [ExerciseID] INT FOREIGN KEY REFERENCES Exercises(ID),
+  [Exercise] VARCHAR(50) FOREIGN KEY REFERENCES Exercises(Exercise),
   [NumberOfReps] INT,
   [Weight] INT,
   [Workout ID] INT FOREIGN KEY REFERENCES Workout(ID)
@@ -42,7 +42,7 @@ CREATE TABLE [Users] (
 
 --Seeding Data
 
-INSERT INTO [Exercises] ( BodyPart, Excercise, TypeOfWorkout)
+INSERT INTO [Exercises] ( BodyPart, Exercise, TypeOfWorkout)
 VALUES ( 'Chest', 'Bench Press', 'strength'),
 ( 'Back', 'Lat Pulldowns',  'strength'),
 ( 'legs', 'Squats', 'strength')
@@ -50,11 +50,11 @@ VALUES ( 'Chest', 'Bench Press', 'strength'),
 INSERT INTO [Workout] ([Workout Number], UserID, Date)
 VALUES (1,1, '2020-07-20')
 
-INSERT INTO Sets (ExerciseID, NumberOfReps, Weight, [Workout ID])
-VALUES(1, 12, 205, 1),
-(1, 15, 205, 1),
-(1, 10, 225, 1),
-(1, 8, 245, 1)
+INSERT INTO Sets (Exercise, NumberOfReps, Weight, [Workout ID])
+VALUES('Bench Press (Barbell)', 12, 205, 1),
+('Bench Press (Barbell)', 15, 205, 1),
+('Bench Press (Barbell)', 10, 225, 1),
+('Bench Press (Barbell)', 8, 245, 1)
 
 INSERT INTO [Progress] (UserID, Date, BodyWeight) 
 VALUES (1, '2020-07-20', 215)

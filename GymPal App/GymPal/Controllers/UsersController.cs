@@ -6,9 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GymPal.Models;
-using Microsoft.AspNetCore;
-using GymPal.Controllers;
-
 
 namespace GymPal.Controllers
 {
@@ -62,20 +59,12 @@ namespace GymPal.Controllers
             {
                 _context.Add(users);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(userLogin));
+                return RedirectToAction(nameof(Index));
             }
             return View(users);
         }
 
-        [HttpGet("userLogin")]
-        public IActionResult userLogin()
-        {
-            return View("UserHome");
-        }
-
-
-
-        //GET: Users/Edit/5
+        // GET: Users/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)

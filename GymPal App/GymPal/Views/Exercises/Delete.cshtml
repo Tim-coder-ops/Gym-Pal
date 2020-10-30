@@ -12,16 +12,16 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.BodyPart)
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.BodyPart)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Excercise)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Excercise)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.TypeOfWorkout)
@@ -32,7 +32,7 @@
     </dl>
     
     <form asp-action="Delete">
-        <input type="hidden" asp-for="Id" />
+        <input type="hidden" asp-for="Exercise" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |
         <a asp-action="Index">Back to List</a>
     </form>

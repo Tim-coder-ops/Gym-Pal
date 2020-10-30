@@ -102,7 +102,7 @@
                             <div class="card bg-primary text-white mb-4">
                                 <div class="card-body">Log New Workout</div>
                                 <div class="card-footer d-flex align-items-center justify-content-between">
-                                    <a class="small text-white stretched-link" href="/LogNewWorkout">Begin Logging</a>
+                                    <a class="small text-white stretched-link" href="/Sets/LogNewWorkout">Begin Logging</a>
                                     <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                 </div>
                             </div>
@@ -143,10 +143,10 @@
                             <i class="fas fa-table mr-1"></i>
                             Exercise History
                         </div>
-                        @*<form asp-controller="Sets" asp-action="UserHome" method="get">
+                       @*<form asp-controller="Sets" asp-action="UserHome" method="get">
                             <p>
 
-                                <select asp-for="ExerciseId" asp-items="Model.ExerciseId">
+                                <select asp-for="Exercise" asp-items="Model.Exercise">
                                     <option value="">All</option>
                                 </select>
 
@@ -192,7 +192,7 @@
                                                 </td>
                                                 <td>
                                                     <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                                                    @*<a asp-action="Details" asp-route-id="@item.Id">Details</a> |*@
+                                                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
                                                     <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
                                                 </td>
                                             </tr>

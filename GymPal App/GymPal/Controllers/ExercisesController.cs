@@ -25,7 +25,7 @@ namespace GymPal.Controllers
         }
 
         // GET: Exercises/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(string id)
         {
             if (id == null)
             {
@@ -33,7 +33,7 @@ namespace GymPal.Controllers
             }
 
             var exercises = await _context.Exercises
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.Exercise == id);
             if (exercises == null)
             {
                 return NotFound();
@@ -53,7 +53,7 @@ namespace GymPal.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,BodyPart,Excercise,TypeOfWorkout")] Exercises exercises)
+        public async Task<IActionResult> Create([Bind("Id,BodyPart,Exercise,TypeOfWorkout")] Exercises exercises)
         {
             if (ModelState.IsValid)
             {
@@ -65,7 +65,7 @@ namespace GymPal.Controllers
         }
 
         // GET: Exercises/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(string id)
         {
             if (id == null)
             {
@@ -85,9 +85,9 @@ namespace GymPal.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,BodyPart,Excercise,TypeOfWorkout")] Exercises exercises)
+        public async Task<IActionResult> Edit(string id, [Bind("Id,BodyPart,Exercise,TypeOfWorkout")] Exercises exercises)
         {
-            if (id != exercises.Id)
+            if (id != exercises.Exercise)
             {
                 return NotFound();
             }
@@ -101,7 +101,7 @@ namespace GymPal.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ExercisesExists(exercises.Id))
+                    if (!ExercisesExists(exercises.Exercise))
                     {
                         return NotFound();
                     }
@@ -116,7 +116,7 @@ namespace GymPal.Controllers
         }
 
         // GET: Exercises/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(string id)
         {
             if (id == null)
             {
@@ -124,7 +124,7 @@ namespace GymPal.Controllers
             }
 
             var exercises = await _context.Exercises
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.Exercise == id);
             if (exercises == null)
             {
                 return NotFound();
@@ -136,7 +136,7 @@ namespace GymPal.Controllers
         // POST: Exercises/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(string id)
         {
             var exercises = await _context.Exercises.FindAsync(id);
             _context.Exercises.Remove(exercises);
@@ -144,9 +144,9 @@ namespace GymPal.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool ExercisesExists(int id)
+        private bool ExercisesExists(string id)
         {
-            return _context.Exercises.Any(e => e.Id == id);
+            return _context.Exercises.Any(e => e.Exercise == id);
         }
     }
 }
