@@ -95,16 +95,15 @@ The Progress page will allow the user to view their past volume per bodypart alo
 
 | Test ID | Requirement ID | Test Procedure                                                                                                                                                                      | Status     | Time Stamp |
 |---------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|------------|
-| 1       | 1.0.0          | Create a new user account and check database for new account.                                                                                                                       | Not Tested |            |
-| 2       | 2.0.0          | Log in with created account,  Should to sent to user home screen.                                                                                                                   | Not Tested |            |
-| 3       | 3.0.0          | Log new workouts into the app, then  check the progress and log new exercise section to ensure that the past workouts are pulled.                                                   | Not Tested |            |
-| 4       | 4.0.0          | Go into the log new workout section and enter at least 3 different exercises. Then change the database to ensure they are stored.                                                   | Not Tested |            |
+| 1       | 1.0.0          | Create a new user account and check database for new account.                                                                                                                       | Pass | 20201101 |
+| 2       | 2.0.0          | Log in with created account,  Should to sent to user home screen.                                                                                                                   | Partial pass |  20201101   |
+| 3       | 3.0.0          | Log new workouts into the app, then  check the progress and log new exercise section to ensure that the past workouts are pulled.                                                   | Partial Pass | 20201101 |
+| 4       | 4.0.0          | Go into the log new workout section and enter at least 3 different exercises. Then change the database to ensure they are stored.                                                   | Partial Pass | 20201101 |
 | 5       | 5.0.0          | Ensure that workouts are logged in the database  under the correct user ID. Then go to the progress  section and check that the graph displays the workouts.                        | Not Tested |            |
-| 6       | 6.0.0          | Ensure that multiple users are created and stored in the database. Then go to find a buddy section and search  for another user. The user should appear and be able to be selected. | Not Tested |            |
-| 7       | 7.0.0          | Go to the log in window and click the forgot password link. Then answer the security questions. If answered correctly it will allow the user to create a new password.              | Not Tested |            |
-| 8       | 8.0.0          | Ensure that multiple user body weights are stored in the  database. Then go to the progress page. It should display  a graph with past weights.                                     | Not Tested |            |
-| 9       | 9.0.0          | Log multiple body weights under a logged in user. Ensure that the weights are saved in the database.                                                                                | Not Tested |            |
-| 10      | 10.0.0         | Ensure that multiple exercises are stored in the database. Then go to the progress page and select an exercise that is stored. It should display the past sets per exercise.        | Not Tested |            |
+| 6       | 7.0.0          | Go to the log in window and click the forgot password link. Then answer the security questions. If answered correctly it will allow the user to create a new password.              | Not Tested |            |
+| 7       | 8.0.0          | Ensure that multiple user body weights are stored in the  database. Then go to the progress page. It should display  a graph with past weights.                                     | Not Tested |            |
+| 8       | 9.0.0          | Log multiple body weights under a logged in user. Ensure that the weights are saved in the database.                                                                                | Not Tested |            |
+| 9      | 10.0.0         | Ensure that multiple exercises are stored in the database. Then go to the progress page and select an exercise that is stored. It should display the past sets per exercise.        | Not Tested |            |
 
 # <a name="user-stories"></a>
 ## <div align="Center"> User Stories</div> [(Back to top)](#table-of-contents)
