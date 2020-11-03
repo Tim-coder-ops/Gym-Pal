@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GymPal.Models;
+using GymPal.ViewModel;
 
 namespace GymPal.Controllers
 {
@@ -174,8 +175,16 @@ namespace GymPal.Controllers
 
         public IActionResult LogNewWorkout()
         {
+            LogNewWorkoutView logNewWorkoutView = new LogNewWorkoutView()
+            {
+                exercises = _context.Exercises.Select(r => r).ToList(),
+                sets = _context.Sets.FirstOrDefault()
+            };
 
-            return View();
+            //var gymPalDbContext = _context.Sets.Include(s => s.ExerciseNavigation).Include(s => s.Workout);
+            //return View(await gymPalDbContext.ToListAsync());
+
+            return View(logNewWorkoutView);
         }
 
 
