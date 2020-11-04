@@ -14,3 +14,6 @@
   
  ## Where were you lucky?
   The luck that I had throughout this project was the people I had available to help me. Whenever I had issues that I could not resolve on my own there were always people there willing to help me.
+  
+  ## What would you change / what do you know now that you wish you knew "then"?
+   I would have tried to look up the methods I would use to build my application before starting it. Though I was learning how to build an application while building this one it may have helped the ovverall process to go smoother. I also would have lessened my total features that I wanted to create becasue as time went on I discovered I would not be able to complete all of them.
